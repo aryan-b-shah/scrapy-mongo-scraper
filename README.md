@@ -2,6 +2,9 @@
 
 A simple Scrapy spider that crawls [quotes.toscrape.com], extracts quotes, and stores them locally in MongoDB with idempotent upserts. Also exports `scraper/output/quotes.json` for quick inspection.
 
+## Author
+- Aryan Shah
+
 ## Stack
 - Scrapy (crawling & parsing)
 - MongoDB (local via Docker Compose or native install)
@@ -164,7 +167,3 @@ print(db.quotes.count_documents({}))
 ### Permission Issues
 1. Make run script executable: `chmod +x run_local.sh`
 2. Check Python virtual environment activation
-
-## License
-
-MIT License - Feel free to use this as a template for your own projects!
